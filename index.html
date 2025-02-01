@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuracy Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #dateAccuracyChart, #dateScoreChart, #dateMistakeChart, #dateRankChart {
+            max-width:750px;
+            max-height: 450px;
+            margin-bottom: 2px;
+            margin-left: 2%;
+        }
+
+        .dateAccuracyChart ,.dateScoreChart, .dateMistakeChart, .dateRankChart {
+            width: 100%;
+            display: flex;
+        }
+        
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> <u>Test Analysis</u></h1>
+    <br> <hr>
+    <h1>Accuracy Trends</h1>
+    <div class="dateAccuracyChart">
+        <canvas id="dateAccuracyChart"></canvas>
+        <div class="chartInfo">
+            <p> Accuracy shows how many of the attempted questions in the test are correct.</p> <br>
+            <ul>
+                <li>
+                    <p>Increasing accuracy shows less incorrect attempts are made.</p>
+                </li>
+                <li>
+                    <p>Decresing accuracy indicates higher number of incorrect attempts<strong>need more practice</strong> to improve accuracy.</p>
+                </li>
+                <li>
+                    <p>Single test can't be used for identifying future accuracy trends <strong>(please attempt more test)</strong>.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <hr>
+
+    <h1> Weak Areas</h1>
+    <div class="dateScoreChart">
+        <canvas id="dateScoreChart"></canvas>
+        <div class="chartInfo">
+            <p> Score is the best parameter to define the weak areas of the student, it also shows on what topic student need to focus on.</p> <br>
+            <ul>
+                <li>
+                    <p>Continuous increase in the score indicates strong areas.</p>
+                </li>
+                <li>
+                    <p>Decrese in score indicates weak areas and <strong>need more practice</strong> to improve.</p>
+                </li>
+                <li>
+                    <p>Single test can't be used for identifying weak and strong areas <strong>(take more test)</strong>.</p>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <hr>
+
+    <h1>Improvement Trend</h1>
+    <div class="dateMistakeChart">
+        <canvas id="dateMistakeChart"></canvas>
+
+        <div class="chartInfo">
+            <p> Mistakes corrected during test shows the improvement in knowledge of the student in the particular topic.</p> <br>
+            <ul>
+                <li>
+                    <p>Continuous increase in mistake correction indicates <strong>strong command</strong> on the topic.</p>
+                </li>
+                <li>
+                    <p>Decrese in mistake correction indicates <strong>lack of knowledge</strong> (Lack of Improvement).</p>
+                </li>
+                <li>
+                    <p>Single test can't be used for identifying improvement trends <strong>(take more test).</strong>.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+
+    <h1>Performance Trends</h1>
+    <div class="dateRankChart">
+        <canvas id="dateRankChart"></canvas>
+        <div class="chartInfo">
+            <p> Ranking in multiple test shows the performance of the student.</p> <br>
+            <ul>
+                <li>
+                    <p>Continuous increase in rank shows <strong>nice performance</strong>.</p>
+                </li>
+                <li>
+                    <p>Decrese in rank indicates <strong>poor performance</strong> (Need to Improve).</p>
+                </li>
+                <li>
+                    <p>Single test can't be used for predicting precise rank in future <strong>(take more test)</strong>.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <script src="./scripts/accuracy.js"></script>
+    <script src="./scripts/score.js"></script>
+    <script src="./scripts/mistakes.js"></script>
+    <script src="./scripts/rank.js"></script>
+
+</body>
+</html>
