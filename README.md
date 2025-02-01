@@ -61,15 +61,25 @@ Testline is a NEET preparation platform offering mock tests, performance analysi
 1. **Date-Accuracy Chart:**
 Fetches topic-wise accuracy data from an API(test response), processes it to align with dates, and dynamically generates a line chart using Chart.js. It ensures accurate visualization by mapping data correctly and assigning distinct colors to different topics for better readability.
 
+![Accuracy](https://github.com/user-attachments/assets/291f7341-b6e8-4929-875d-6ccd54a650e9)
+
+
 2. **Date-Score Chart:**
 Fetches NEET score data from an API, processes it by date and topic, and visualizes it using a dynamic line chart. It maps scores to corresponding dates, applies distinct colors, and enhances readability with labeled axes for performance tracking.
+
+![Score](https://github.com/user-attachments/assets/ac15fdc7-ce72-47eb-86a1-9db3a564162b)
+
 
 3. **Date-MistakesCorrected Chart:**
 Fetches mistake correction data from an API, processes it to extract dates and topic-wise corrections, and visualizes it using a dynamic line chart. It ensures accurate data mapping, assigns distinct colors to topics, and handles errors for a smooth user experience.
 
+![Mistakes](https://github.com/user-attachments/assets/a8e36e9b-a8a4-444f-8804-53670f106bd3)
+
+
 4. **Date-Rank Chart:**
 Fetches rank data from an API, processes it by topics and dates, and visualizes trends using a dynamic line chart. It ensures data alignment, assigns unique colors, and reverses ranks for clarity, aiding NEET aspirants in performance tracking.
 
+![Rank](https://github.com/user-attachments/assets/53afa69c-6de6-4ef3-8c76-a07022eb0b0d)
 
 ## NEET Rank Prediction
 
